@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mi APP"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginBottom="10dp"
+        android:hint="Usuario"
+        />
+
+    <LinearLayout
+        android:id="@+id/llPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/etUser"
+        android:layout_marginBottom="20dp"
+        >
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingRight="60dp"
+            android:hint="Password"
+            />
+
+        <ImageButton
+            android:id="@+id/ibPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?buttonBarButtonStyle"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+            android:layout_marginLeft="-60dp"
+            android:onClick="showHiddenPassword"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPassword"
+        android:text="Ingresar"
+        />
+
+
+</RelativeLayout>
