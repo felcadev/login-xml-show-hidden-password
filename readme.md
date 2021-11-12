@@ -1,6 +1,6 @@
 # Login Básico de xml en Android Studio
 
-_En este proyecto se eneseña lo escencial de xml con RelativeLayout para la correcta distribución de componenentes en la vista de una aplicación android._
+_En este proyecto se eneseña lo escencial de xml para poder hacer un login con ocultar y mostrar contraseña._
 
 _Para ver el tutorial puedes [aquí](https://www.youtube.com/watch?v=BfQU2mbM53U)_
 
